@@ -1,0 +1,13 @@
+{
+  "name": "source-welding-viewer",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "lucide": "^0.468.0",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.58.0",
+    "pngjs": "^7.0.0"
+  }
+}

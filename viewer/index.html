@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>上航发 · 焊接工作站</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/","lucide":"./node_modules/lucide/dist/esm/lucide.js"}}</script>
+</head>
+<body>
+  <header class="topbar">
+    <button class="icon-button mobile-menu" id="toggle-sidebar" aria-label="焊缝列表" title="焊缝列表"><i data-lucide="panel-left"></i></button>
+    <div class="identity"><span class="brand-mark">AP</span><div><h1>上航发 <span>焊接工作站</span></h1><div class="project-name" id="project-name">AP31-LZ · OP10</div></div></div>
+    <span id="load-status" class="status"><span class="status-dot"></span>读取工程</span>
+    <button id="reload" class="icon-button" title="刷新工程" aria-label="刷新工程"><i data-lucide="refresh-cw"></i></button>
+  </header>
+  <div class="workspace">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-heading"><h2>焊缝与工艺</h2><span class="count" id="weld-count">0</span></div>
+      <label class="search"><i data-lucide="search"></i><input id="search" type="search" placeholder="焊缝名称" aria-label="搜索焊缝"></label>
+      <div class="group-field"><label for="group">工艺分组</label><select id="group"><option value="">全部分组</option></select></div>
+      <div class="weld-list" id="weld-list"><div class="empty-state">工程读取中</div></div>
+      <section class="plan-status"><div class="section-title"><h2>规划状态</h2><span id="plan-badge" class="badge">未读取</span></div><dl id="plan-details"><div><dt>轨迹</dt><dd>—</dd></div><div><dt>碰撞验证</dt><dd>—</dd></div></dl><div class="weld-legend"><span><b class="legend-pending"></b>待规划</span><span><b class="legend-diagnostic"></b>待验证</span><span><b class="legend-safe"></b>通过</span><span><b class="legend-rejected"></b>拒绝</span></div><p id="plan-note"></p></section>
+    </aside>
+    <main class="scene-area">
+      <div id="canvas-host" role="img" aria-label="真实焊接工作站三维模型"></div>
+      <div class="scene-toolbar">
+        <div class="view-modes" role="group" aria-label="相机视图"><button class="icon-button" data-view="perspective" title="等轴视图" aria-label="等轴视图"><i data-lucide="box"></i></button><button class="icon-button" data-view="top" title="顶视图" aria-label="顶视图"><i data-lucide="arrow-down-to-line"></i></button><button class="icon-button" data-view="front" title="前视图" aria-label="前视图"><i data-lucide="panel-top"></i></button><button class="icon-button" id="fit" title="适合窗口" aria-label="适合窗口"><i data-lucide="scan"></i></button></div>
+        <div class="visibility"><label title="机器人"><input id="show-robot" type="checkbox" checked><span>机器人</span></label><label title="夹具"><input id="show-fixture" type="checkbox" checked><span>夹具</span></label><label title="厂房环境"><input id="show-layout" type="checkbox"><span>厂房</span></label><label title="焊缝标记"><input id="show-welds" type="checkbox" checked><span>焊缝</span></label></div>
+      </div>
+      <div class="scene-label"><span class="live-dot"></span><span id="geometry-label">原始 JT 网格</span><span class="units">m</span></div>
+      <div class="scene-plan-caption" id="scene-plan-caption"></div>
+      <div class="selection-info" id="selection-info" hidden><div><span class="eyebrow">选中焊缝</span><strong id="selected-name"></strong></div><dl><div><dt>世界坐标 / mm</dt><dd id="selected-coordinate"></dd></div><div><dt>源操作</dt><dd id="selected-sequence"></dd></div></dl></div>
+      <div class="scene-message" id="scene-message">读取真实网格</div>
+      <footer class="playback">
+        <div class="play-controls"><button id="restart" class="icon-button" title="返回起点" aria-label="返回起点" disabled><i data-lucide="skip-back"></i></button><button id="play" class="play-button" title="播放轨迹" aria-label="播放轨迹" disabled><i data-lucide="play"></i></button><span id="time-label" class="time-label">00:00 / 00:00</span></div>
+        <input id="timeline" type="range" min="0" max="1" step="any" value="0" aria-label="轨迹时间" disabled>
+        <label class="speed-label"><span>速度</span><select id="speed" aria-label="播放速度"><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select></label>
+      </footer>
+    </main>
+  </div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
