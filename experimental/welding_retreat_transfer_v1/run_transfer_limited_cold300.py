@@ -23,7 +23,7 @@ from conservative_search_v30 import certified_search
 from mixed_bridge_v95 import SignedSearchBridge as SearchBridge, connect_fresh_park_options, SIGNS
 from shared_gateway import connect_shared
 from integrated_retreat_v117 import online_retreat_ids
-from feedback_reselection_v156 import Reselection, invalidate_incident, archive_incident
+from feedback_reselection_cold300 import Reselection, invalidate_incident, archive_incident
 
 _ENGINE = None
 
@@ -219,7 +219,7 @@ def main():
                         help='Optional extra connections before route ordering (default disabled)')
     parser.add_argument('--seed-snapshot', type=Path)
     args = parser.parse_args()
-    if not 1 <= args.workers <= 4 or args.iterations < 1 or args.ordering_rounds < 1 or not np.isfinite(args.edge_seconds) or args.edge_seconds <= 0 or args.edge_attempts < 1 or not np.isfinite(args.reselect_seconds) or args.reselect_seconds <= 0 or args.reselect_per_edge < 0 or args.reorder_first_rounds < 0 or args.iterations > 200 or args.edge_attempts > 2 or args.edge_seconds > 12:
+    if not 1 <= args.workers <= 4 or args.iterations < 1 or args.ordering_rounds < 1 or not np.isfinite(args.edge_seconds) or args.edge_seconds <= 0 or args.edge_attempts < 1 or not np.isfinite(args.reselect_seconds) or args.reselect_seconds <= 0 or args.reselect_per_edge < 0 or args.reorder_first_rounds < 0 or args.iterations > 10000 or args.edge_attempts > 8 or args.edge_seconds > 300:
         raise ValueError('Invalid worker/iteration/round budget')
     source_out, out = args.retreat_out.resolve(), args.out.resolve()
     if args.resume:
@@ -255,7 +255,7 @@ def main():
                 raise RuntimeError('Transfer seed evidence changed: '+name)
             baseline[name] = value
     codes = {str((HERE/n).relative_to(ROOT)): digest(HERE/n) for n in
-             (Path(__file__).name, 'conservative_search_v30.py', 'mixed_bridge_v95.py', 'mixed_bridge_v52.py', 'endpoint_folded_gateway_v94.py', 'signed_wrist_model_v40.py', 'state_space.py', 'world_bridge_v2.py', 'ordering.py', 'certified_ordering_v91.py', 'shared_gateway.py','integrated_retreat_v117.py','feedback_reselection_v156.py','run_joint_weld_retreat_cold300.py')}
+             (Path(__file__).name, 'conservative_search_v30.py', 'mixed_bridge_v95.py', 'mixed_bridge_v52.py', 'endpoint_folded_gateway_v94.py', 'signed_wrist_model_v40.py', 'state_space.py', 'world_bridge_v2.py', 'ordering.py', 'certified_ordering_v91.py', 'shared_gateway.py','integrated_retreat_v117.py','feedback_reselection_cold300.py','run_joint_weld_retreat_cold300.py')}
     for name, value in {**baseline, **codes}.items():
         if digest(ROOT/name) != value:
             raise RuntimeError('Source/code changed: '+name)
