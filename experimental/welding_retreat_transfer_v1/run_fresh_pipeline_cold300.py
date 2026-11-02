@@ -24,11 +24,12 @@ def main():
     parser.add_argument('--configurations', type=int, default=4)
     parser.add_argument('--point-seconds', type=float, default=240.)
     parser.add_argument('--angle-seconds',type=float,default=20.)
-    parser.add_argument('--transfer-iterations', type=int, default=200)
-    parser.add_argument('--edge-seconds',type=float,default=12.)
+    parser.add_argument('--transfer-iterations', type=int, default=1000)
+    parser.add_argument('--ordering-rounds',type=int,default=8)
+    parser.add_argument('--edge-seconds',type=float,default=60.)
     parser.add_argument('--edge-attempts',type=int,default=2)
-    parser.add_argument('--reselect-seconds',type=float,default=45.)
-    parser.add_argument('--reselect-per-edge',type=int,default=2)
+    parser.add_argument('--reselect-seconds',type=float,default=120.)
+    parser.add_argument('--reselect-per-edge',type=int,default=3)
     parser.add_argument('--reorder-first-rounds',type=int,default=2)
     args = parser.parse_args()
     started = time.perf_counter()
@@ -44,7 +45,7 @@ def main():
     transfer_cmd = [sys.executable, '-u', str(HERE/'run_transfer_limited_cold300.py'),
                     '--retreat-out', str(retreat), '--retreat-online',
                     '--out', str(transfer), '--workers', str(args.workers),
-                    '--iterations', str(args.transfer_iterations),
+                    '--iterations', str(args.transfer_iterations), '--ordering-rounds', str(args.ordering_rounds),
                     '--edge-seconds',str(args.edge_seconds),'--edge-attempts',str(args.edge_attempts),
                     '--reselect-seconds',str(args.reselect_seconds),'--reselect-per-edge',str(args.reselect_per_edge),'--reorder-first-rounds',str(args.reorder_first_rounds)]
     stages = []
