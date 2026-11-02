@@ -1,0 +1,1775 @@
+{
+  "date": "2026-11-02",
+  "raw_actions": {
+    "complete": true,
+    "source_points": 29,
+    "geometry_qualified": 21,
+    "geometry_discarded": 8,
+    "points": 21,
+    "requested_points": 21,
+    "passed": 21,
+    "required_straight_distance_mm": 300.0,
+    "online_validated_retreats": 21,
+    "model_load_s": 63.138348739012145,
+    "geometry_screen_s": 3.655689237988554,
+    "stationary_wall_s": 65.65381790103856,
+    "positioner_wall_s": 203.1795566889923,
+    "wall_s": 337.62935922993347,
+    "independent_cold_performed": false,
+    "full_inventory_action_planned": true
+  },
+  "fresh_transfers": {
+    "complete": true,
+    "experiment_finished": true,
+    "full_route_planned": true,
+    "all_retained_nodes_route_planned": true,
+    "all_required_points_route_planned": true,
+    "required_retreat_points": 21,
+    "retained_retreat_nodes": 21,
+    "cold_verified_retreat_nodes": 0,
+    "online_validated_retreat_nodes": 21,
+    "expected_edges": 20,
+    "selected_passed_edges": 20,
+    "tested_edges": 24,
+    "passed_edges": 22,
+    "model_load_s": 50.10530595795717,
+    "wall_s": 950.5807231370127
+  },
+  "weld_ids_match_original_21": true,
+  "trajectory_frames": 63274,
+  "duration_s": 402.2446465924116,
+  "route_sha256": "3f18542c727ce53d6de1c9fd3547f3caa81b7da380d28119fd4f2cdc30d41335",
+  "full_factory_gui": {
+    "native_viewer_opened": true,
+    "syncs": 4,
+    "max_body_displacement_m": 7.133256650272578,
+    "max_positioner_change_deg": 59.99999999999999,
+    "phases_seen": [
+      "transfer"
+    ],
+    "source_fk_live": true,
+    "trajectory": "Both source TCP paths, exact consecutive samples in local window",
+    "scene": {
+      "source_scene": "/home/ubuntu22/shanghangfa_migration_20261009/public-code-20261027/build/scene_placement_corrected_v1.json",
+      "scene_sha256": "7b493c07f1ebf629a12c3a8ef864f09d9150ab36ac05e4f0e195e1d2d6d16418",
+      "meshes": [
+        {
+          "url": "meshes/ST1-LZ-OP10R.glb",
+          "sha256": "1c060f1ef065c0628afff219e34cdc84799623d3d84b02c6ae0b2efe12c21c76",
+          "source_triangles": 2070478,
+          "converted_triangles": 2070478,
+          "colors": [
+            [
+              0,
+              0,
+              0,
+              255
+            ],
+            [
+              0,
+              0,
+              255,
+              255
+            ],
+            [
+              0,
+              255,
+              0,
+              255
+            ],
+            [
+              0,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              0,
+              0,
+              255
+            ],
+            [
+              255,
+              0,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              0,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/gun_R1_507_body.glb",
+          "sha256": "1d2672d4968450340f01e5b154743f233c2c58dccdc43448bdfa50d59c83245d",
+          "source_triangles": 97320,
+          "converted_triangles": 97320,
+          "colors": [
+            [
+              0,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              0,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/gun_R1_507_electrode_9.glb",
+          "sha256": "168520ef68365d97928384d34a518eba4639ff63798729d8421d30ba8e3b179a",
+          "source_triangles": 340,
+          "converted_triangles": 340,
+          "colors": [
+            [
+              255,
+              255,
+              0,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/gun_R1_510_body.glb",
+          "sha256": "4a70083fb1a7ee442f113bdbd4b0f39dde8d6981a7af3487885b15f3958476f9",
+          "source_triangles": 17772,
+          "converted_triangles": 17772,
+          "colors": [
+            [
+              0,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              0,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/gun_R1_510_electrode_1717.glb",
+          "sha256": "0c66f7fd3c81592107e04649a854661c4ada71106e6eca9a9d46f6451520e6a7",
+          "source_triangles": 340,
+          "converted_triangles": 340,
+          "colors": [
+            [
+              255,
+              255,
+              0,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/gun_R1_508_body.glb",
+          "sha256": "a74451e7e0efb4f06e3a57543d160fb246f4dc001d6bbac49b218dc5c9edc2b1",
+          "source_triangles": 32314,
+          "converted_triangles": 32314,
+          "colors": [
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/gun_R1_509_body.glb",
+          "sha256": "107a7254d41349c5b9cae0b3460f6e898313d4d958ecfe54b1ca519ad484b1f6",
+          "source_triangles": 3292,
+          "converted_triangles": 3292,
+          "colors": [
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/gun_R2_391_body.glb",
+          "sha256": "b5a1af93d5b15b80a287003d9236e8a4872e58ef046c4df59b13a0697a014f68",
+          "source_triangles": 99440,
+          "converted_triangles": 99440,
+          "colors": [
+            [
+              0,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              0,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/gun_R2_391_electrode_9.glb",
+          "sha256": "168520ef68365d97928384d34a518eba4639ff63798729d8421d30ba8e3b179a",
+          "source_triangles": 340,
+          "converted_triangles": 340,
+          "colors": [
+            [
+              255,
+              255,
+              0,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/gun_R2_394_body.glb",
+          "sha256": "242f5a4ea19b596b424daa7159a61427b354f8e63a2086aaa67be15a578cd9d1",
+          "source_triangles": 17772,
+          "converted_triangles": 17772,
+          "colors": [
+            [
+              0,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              0,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/gun_R2_394_electrode_1935.glb",
+          "sha256": "0c66f7fd3c81592107e04649a854661c4ada71106e6eca9a9d46f6451520e6a7",
+          "source_triangles": 340,
+          "converted_triangles": 340,
+          "colors": [
+            [
+              255,
+              255,
+              0,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/gun_R2_392_body.glb",
+          "sha256": "8415b95dc0928cebb83ccb97aad27511e967861e12d3e96cf19474573b9693e6",
+          "source_triangles": 18582,
+          "converted_triangles": 18582,
+          "colors": [
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/gun_R2_393_body.glb",
+          "sha256": "0ab048bc3af355d60f6c90c2db5156b4b58ee576c784a0338bbde5c149da58d6",
+          "source_triangles": 2840,
+          "converted_triangles": 2840,
+          "colors": [
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/robot_link_239.glb",
+          "sha256": "5741e2dad25c14f9840ab23918ec4bf6ef59f274c1f2eeafe6bd8c8969f4a700",
+          "source_triangles": 3428,
+          "converted_triangles": 3428,
+          "colors": [
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/robot_link_240.glb",
+          "sha256": "b4445213188bb911b511e9c508c78e894f78219a3990bc21166ffb281485a159",
+          "source_triangles": 2609,
+          "converted_triangles": 2609,
+          "colors": [
+            [
+              255,
+              0,
+              0,
+              255
+            ],
+            [
+              255,
+              255,
+              0,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/robot_link_241.glb",
+          "sha256": "0fd6695ae8f385104708f6c3238e8d5b180c889fdefb7a7c68a93441e546e5bb",
+          "source_triangles": 3438,
+          "converted_triangles": 3438,
+          "colors": [
+            [
+              255,
+              255,
+              0,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/robot_link_242.glb",
+          "sha256": "c225f0bd3f155f966d7fd5a263a5ed25f2f2aaf2220ff8dfdc1089d673fa876a",
+          "source_triangles": 5850,
+          "converted_triangles": 5850,
+          "colors": [
+            [
+              255,
+              0,
+              0,
+              255
+            ],
+            [
+              255,
+              255,
+              0,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/robot_link_243.glb",
+          "sha256": "37af2e3b299b94ae3e744037fa237efb1cb587595c7e99ae12e50257fba31981",
+          "source_triangles": 1538,
+          "converted_triangles": 1538,
+          "colors": [
+            [
+              255,
+              255,
+              0,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/robot_link_244.glb",
+          "sha256": "06b395a4b436c4589a0f73483f114cfdf3c88c5812ee52920b28b2c1ffb0dc3b",
+          "source_triangles": 2306,
+          "converted_triangles": 2306,
+          "colors": [
+            [
+              255,
+              255,
+              0,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/robot_link_245.glb",
+          "sha256": "8d4665e41e41d1b17bd191d0195d10186e5b91acb5ce0ff6163a02b4cac47d79",
+          "source_triangles": 4235,
+          "converted_triangles": 4235,
+          "colors": [
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/robot_link_246.glb",
+          "sha256": "ac8933f5c2c08071f0cc90c7f3eeb2b8579ffe27ec6c9df0908502f7f0252192",
+          "source_triangles": 204,
+          "converted_triangles": 204,
+          "colors": [
+            [
+              255,
+              255,
+              0,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/robot_link_247.glb",
+          "sha256": "2fb99875150cea0fcad9208cfcf586125c99a67996ec4eaa9246010e23f0f7bf",
+          "source_triangles": 1124,
+          "converted_triangles": 1124,
+          "colors": [
+            [
+              255,
+              255,
+              0,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/LZ-L-OP10-SUB1.glb",
+          "sha256": "38d41b5bbc1f0ba1f88cffec7f1a9a951160bc80d1ce30ce38e8b8fada72c2ca",
+          "source_triangles": 41620,
+          "converted_triangles": 41620,
+          "colors": [
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/LZ-L-OP10-SUB2.glb",
+          "sha256": "9e8dfa2209494dabb3e8f0fb3d70a2fb8286dec6a0163d25812d93221d531066",
+          "source_triangles": 32020,
+          "converted_triangles": 32020,
+          "colors": [
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "meshes/LZ-L-OP10-SUB3.glb",
+          "sha256": "b75910690d5a7f239f76feec4f0e205f515ba68bd1622250d06dc71d236f10e8",
+          "source_triangles": 73640,
+          "converted_triangles": 73640,
+          "colors": [
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "welding_positioner_static_v2/DONG.glb",
+          "sha256": "fb4bb623386fca1f87f6d0c4c46fb33a637dc13ba586c69fe88139da5b6502cd",
+          "source_triangles": 1800712,
+          "converted_triangles": 1800712,
+          "colors": [
+            [
+              0,
+              0,
+              0,
+              255
+            ],
+            [
+              0,
+              0,
+              255,
+              255
+            ],
+            [
+              0,
+              255,
+              0,
+              255
+            ],
+            [
+              0,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              0,
+              0,
+              255
+            ],
+            [
+              255,
+              0,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              0,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              0
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "welding_positioner_static_v2/JING.glb",
+          "sha256": "064dc0555de36b1ff9f9afaf75c3710c16660b51c50d683c080c795f5e5db1b1",
+          "source_triangles": 182950,
+          "converted_triangles": 182950,
+          "colors": [
+            [
+              0,
+              0,
+              255,
+              255
+            ],
+            [
+              0,
+              255,
+              255,
+              255
+            ],
+            [
+              255,
+              0,
+              255,
+              255
+            ],
+            [
+              255,
+              255,
+              0,
+              255
+            ],
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        },
+        {
+          "url": "welding_full_factory_v109/factory.glb",
+          "sha256": "99dcfb8da304b76fdd6e2a8381d80d7d13453f29d6a5a1be1806779dd6be80f9",
+          "source_triangles": 7057473,
+          "converted_triangles": 7057473,
+          "colors": [
+            [
+              255,
+              255,
+              255,
+              255
+            ]
+          ],
+          "alpha_mode": "OPAQUE",
+          "normals": "flat face normals; source GLB has no NORMAL attribute"
+        }
+      ],
+      "bodies": [
+        {
+          "name": "body_0",
+          "label": "ST1-LZ-OP10R",
+          "url": "meshes/ST1-LZ-OP10R.glb",
+          "source_matrix": [
+            1.0,
+            0.0,
+            0.0,
+            -13140.0000000002,
+            0.0,
+            1.0,
+            0.0,
+            0.000536081090785956,
+            0.0,
+            0.0,
+            1.0,
+            0.00471048121016793,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "fixture"
+        },
+        {
+          "name": "body_1",
+          "label": "DTMX-0545-ST1-R1:507_body",
+          "url": "meshes/gun_R1_507_body.glb",
+          "source_matrix": [
+            -0.4484850418588987,
+            6.370677627658317e-06,
+            0.8937903373768568,
+            4875.901418282778,
+            -0.7740443301793819,
+            0.49999879674098907,
+            -0.38840259805350696,
+            1621.9873205939662,
+            -0.44689656761489316,
+            -0.8660260984618052,
+            -0.2242370500988845,
+            -10233.616908152877,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "gun"
+        },
+        {
+          "name": "body_2",
+          "label": "DTMX-0545-ST1-R1:507_electrode_9",
+          "url": "meshes/gun_R1_507_electrode_9.glb",
+          "source_matrix": [
+            -0.4484850418588987,
+            6.370677627658317e-06,
+            0.8937903373768568,
+            4875.901418282778,
+            -0.7740443301793819,
+            0.49999879674098907,
+            -0.38840259805350696,
+            1621.9873205939662,
+            -0.44689656761489316,
+            -0.8660260984618052,
+            -0.2242370500988845,
+            -10233.616908152877,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "gun"
+        },
+        {
+          "name": "body_3",
+          "label": "DTMX-0545-ST1-R1:510_body",
+          "url": "meshes/gun_R1_510_body.glb",
+          "source_matrix": [
+            -0.429961033899905,
+            6.370677627658317e-06,
+            0.9028474451905695,
+            4871.545810650368,
+            -0.7818880809280574,
+            0.49999879674098907,
+            -0.37236035256214073,
+            1615.0856076076416,
+            -0.4514250084237285,
+            -0.8660260984618052,
+            -0.21497501843855973,
+            -10237.601633258639,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "gun"
+        },
+        {
+          "name": "body_4",
+          "label": "DTMX-0545-ST1-R1:510_electrode_1717",
+          "url": "meshes/gun_R1_510_electrode_1717.glb",
+          "source_matrix": [
+            -0.429961033899905,
+            6.370677627658317e-06,
+            0.9028474451905695,
+            4871.545810650368,
+            -0.7818880809280574,
+            0.49999879674098907,
+            -0.37236035256214073,
+            1615.0856076076416,
+            -0.4514250084237285,
+            -0.8660260984618052,
+            -0.21497501843855973,
+            -10237.601633258639,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "gun"
+        },
+        {
+          "name": "body_5",
+          "label": "DTMX-0545-ST1-R1:508_body",
+          "url": "meshes/gun_R1_508_body.glb",
+          "source_matrix": [
+            -0.445970797051443,
+            6.370677627658317e-06,
+            0.8950475116644447,
+            4876.047229227755,
+            -0.7751330839314948,
+            0.49999879674098907,
+            -0.38622520043675623,
+            1621.1239711754583,
+            -0.4475251393744826,
+            -0.8660260984618052,
+            -0.22297992378434517,
+            -10234.115360500067,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "gun"
+        },
+        {
+          "name": "body_6",
+          "label": "DTMX-0545-ST1-R1:509_body",
+          "url": "meshes/gun_R1_509_body.glb",
+          "source_matrix": [
+            -0.445970797051443,
+            6.370677627658317e-06,
+            0.8950475116644447,
+            4871.890779275869,
+            -0.7751330839314948,
+            0.49999879674098907,
+            -0.38622520043675623,
+            1622.9175378281238,
+            -0.4475251393744826,
+            -0.8660260984618052,
+            -0.22297992378434517,
+            -10233.079878208717,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "gun"
+        },
+        {
+          "name": "body_7",
+          "label": "DTMX-0568-ST1-R2:391_body",
+          "url": "meshes/gun_R2_391_body.glb",
+          "source_matrix": [
+            -0.1411201249490816,
+            -0.47462768582087117,
+            0.8688001324739083,
+            8001.186063018564,
+            -6.449702933432094e-08,
+            0.8775825619319005,
+            0.4794255385281833,
+            3290.3795592318843,
+            -0.9899924799382829,
+            0.06765653586585033,
+            -0.12384459140504074,
+            -8868.23903992573,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "gun"
+        },
+        {
+          "name": "body_8",
+          "label": "DTMX-0568-ST1-R2:391_electrode_9",
+          "url": "meshes/gun_R2_391_electrode_9.glb",
+          "source_matrix": [
+            -0.1411201249490816,
+            -0.47462768582087117,
+            0.8688001324739083,
+            8001.186063018564,
+            -6.449702933432094e-08,
+            0.8775825619319005,
+            0.4794255385281833,
+            3290.3795592318843,
+            -0.9899924799382829,
+            0.06765653586585033,
+            -0.12384459140504074,
+            -8868.23903992573,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "gun"
+        },
+        {
+          "name": "body_9",
+          "label": "DTMX-0568-ST1-R2:394_body",
+          "url": "meshes/gun_R2_394_body.glb",
+          "source_matrix": [
+            -0.1411201249490816,
+            -0.47462768582087117,
+            0.8688001324739083,
+            8001.186063018564,
+            -6.449702933432094e-08,
+            0.8775825619319005,
+            0.4794255385281833,
+            3290.3795592318843,
+            -0.9899924799382829,
+            0.06765653586585033,
+            -0.12384459140504074,
+            -8868.23903992573,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "gun"
+        },
+        {
+          "name": "body_10",
+          "label": "DTMX-0568-ST1-R2:394_electrode_1935",
+          "url": "meshes/gun_R2_394_electrode_1935.glb",
+          "source_matrix": [
+            -0.1411201249490816,
+            -0.47462768582087117,
+            0.8688001324739083,
+            8001.186063018564,
+            -6.449702933432094e-08,
+            0.8775825619319005,
+            0.4794255385281833,
+            3290.3795592318843,
+            -0.9899924799382829,
+            0.06765653586585033,
+            -0.12384459140504074,
+            -8868.23903992573,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "gun"
+        },
+        {
+          "name": "body_11",
+          "label": "DTMX-0568-ST1-R2:392_body",
+          "url": "meshes/gun_R2_392_body.glb",
+          "source_matrix": [
+            -0.1411201249490816,
+            -0.47462768582087117,
+            0.8688001324739083,
+            8001.186063018564,
+            -6.449702933432094e-08,
+            0.8775825619319005,
+            0.4794255385281833,
+            3290.3795592318843,
+            -0.9899924799382829,
+            0.06765653586585033,
+            -0.12384459140504074,
+            -8868.23903992573,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "gun"
+        },
+        {
+          "name": "body_12",
+          "label": "DTMX-0568-ST1-R2:393_body",
+          "url": "meshes/gun_R2_393_body.glb",
+          "source_matrix": [
+            -0.1411201249490816,
+            -0.47462768582087117,
+            0.8688001324739083,
+            8001.186063018564,
+            -6.449702933432094e-08,
+            0.8775825619319005,
+            0.4794255385281833,
+            3290.3795592318843,
+            -0.9899924799382829,
+            0.06765653586585033,
+            -0.12384459140504074,
+            -8868.23903992573,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "gun"
+        },
+        {
+          "name": "body_13",
+          "label": "r2000ic_165f,210f_WELD_R1:239",
+          "url": "meshes/robot_link_239.glb",
+          "source_matrix": [
+            1.0,
+            0.0,
+            0.0,
+            5373.50170898438,
+            0.0,
+            -3.608224830031759e-15,
+            1.0,
+            849.996643066408,
+            0.0,
+            -1.0,
+            -3.608224830031759e-15,
+            -8735.99658203125,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "robot"
+        },
+        {
+          "name": "body_14",
+          "label": "r2000ic_165f,210f_WELD_R1:240",
+          "url": "meshes/robot_link_240.glb",
+          "source_matrix": [
+            -0.5353862583295396,
+            -0.8446073374011709,
+            0.0,
+            5373.50170898438,
+            -3.047533166437916e-15,
+            1.931793990962442e-15,
+            0.9999999999999999,
+            849.996643066408,
+            -0.8446073374011709,
+            0.5353862583295396,
+            -3.608224830031758e-15,
+            -8735.99658203125,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "robot"
+        },
+        {
+          "name": "body_15",
+          "label": "r2000ic_165f,210f_WELD_R1:241",
+          "url": "meshes/robot_link_241.glb",
+          "source_matrix": [
+            -0.5151716779237956,
+            -0.8446073374011708,
+            -0.1457277868948998,
+            5464.83237711737,
+            -0.27219187012678864,
+            1.9317939909624417e-15,
+            0.9622429972916825,
+            960.2176983605377,
+            -0.8127174958754498,
+            0.5353862583295395,
+            -0.22989525069003328,
+            -8591.916394624956,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "robot"
+        },
+        {
+          "name": "body_16",
+          "label": "r2000ic_165f,210f_WELD_R1:242",
+          "url": "meshes/robot_link_242.glb",
+          "source_matrix": [
+            -0.37190781055707023,
+            -0.8446073374011708,
+            -0.38512728552356645,
+            5837.886175605976,
+            -0.7193447338846621,
+            1.9317939909624417e-15,
+            0.6946532615862421,
+            1566.6734806589877,
+            -0.5867092416853944,
+            0.5353862583295395,
+            -0.6075638403598792,
+            -8003.3992809583715,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "robot"
+        },
+        {
+          "name": "body_17",
+          "label": "r2000ic_165f,210f_WELD_R1:243",
+          "url": "meshes/robot_link_243.glb",
+          "source_matrix": [
+            -0.37190781055707023,
+            -0.06678229587519052,
+            -0.9258643018306109,
+            6903.138097730853,
+            -0.7193447338846621,
+            -0.6096742262122179,
+            0.3329271567849902,
+            2279.273907117454,
+            -0.5867092416853944,
+            0.7898338197685456,
+            0.17870311376911627,
+            -9552.345180592492,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "robot"
+        },
+        {
+          "name": "body_18",
+          "label": "r2000ic_165f,210f_WELD_R1:244",
+          "url": "meshes/robot_link_244.glb",
+          "source_matrix": [
+            0.8937903373747258,
+            -0.06678229587519052,
+            -0.44348501414727876,
+            3937.8594494872696,
+            -0.38840276144799246,
+            -0.6096742262122179,
+            -0.6909707901149706,
+            3769.493242391199,
+            -0.22423676709038462,
+            0.7898338197685456,
+            -0.5708593604686543,
+            -8652.76328589934,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "robot"
+        },
+        {
+          "name": "body_19",
+          "label": "r2000ic_165f,210f_WELD_R1:245",
+          "url": "meshes/robot_link_245.glb",
+          "source_matrix": [
+            0.8937903373747255,
+            6.809319521276026e-06,
+            0.4484850418567007,
+            2180.6784391594306,
+            -0.38840276144799235,
+            0.49999892276471763,
+            0.7740441667848773,
+            883.4137772984984,
+            -0.22423676709038454,
+            -0.866026025698855,
+            0.44689685062338225,
+            -10657.743021750652,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "robot"
+        },
+        {
+          "name": "body_20",
+          "label": "r2000ic_165f,210f_WELD_R1:246",
+          "url": "meshes/robot_link_246.glb",
+          "source_matrix": [
+            -0.5300203154125789,
+            -0.8446073374011709,
+            0.07561025630200448,
+            5321.886254851709,
+            0.14122562005591002,
+            1.931793990962442e-15,
+            0.989977436227626,
+            901.7238247784647,
+            -0.8361422064994529,
+            0.5353862583295396,
+            0.11928019492825058,
+            -8817.423384840436,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "robot"
+        },
+        {
+          "name": "body_21",
+          "label": "r2000ic_165f,210f_WELD_R1:247",
+          "url": "meshes/robot_link_247.glb",
+          "source_matrix": [
+            -0.5300203154125789,
+            -0.8446073374011709,
+            0.07561025630200448,
+            5327.51378201969,
+            0.14122562005591002,
+            1.931793990962442e-15,
+            0.989977436227626,
+            899.6257864968135,
+            -0.8361422064994529,
+            0.5353862583295396,
+            0.11928019492825058,
+            -8808.545587430523,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "robot"
+        },
+        {
+          "name": "body_22",
+          "label": "r2000ic_165f,210f_WELD_R2:239",
+          "url": "meshes/robot_link_239.glb",
+          "source_matrix": [
+            -1.0,
+            1.1832913578315177e-29,
+            3.2310891488651735e-15,
+            7073.50146484375,
+            3.2310891488651735e-15,
+            3.60822483003176e-15,
+            1.0,
+            849.995849609375,
+            0.0,
+            1.0,
+            -3.608224830031757e-15,
+            -8735.9970703125,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "robot"
+        },
+        {
+          "name": "body_23",
+          "label": "r2000ic_165f,210f_WELD_R2:240",
+          "url": "meshes/robot_link_240.glb",
+          "source_matrix": [
+            0.9899924966004456,
+            -0.14112000805986724,
+            3.2310891488651743e-15,
+            7073.50146484375,
+            -3.707946730319537e-15,
+            -3.1161441810488582e-15,
+            1.0000000000000002,
+            849.995849609375,
+            -0.14112000805986724,
+            -0.9899924966004456,
+            -3.608224830031758e-15,
+            -8735.9970703125,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "robot"
+        },
+        {
+          "name": "body_24",
+          "label": "r2000ic_165f,210f_WELD_R2:241",
+          "url": "meshes/robot_link_241.glb",
+          "source_matrix": [
+            0.6897344145848837,
+            -0.14112000805986724,
+            -0.7101771473811526,
+            7643.000675177979,
+            0.7173560908995203,
+            -3.1161441810488582e-15,
+            0.6967067093471683,
+            829.3872539861209,
+            -0.09831925643843817,
+            -0.9899924966004456,
+            0.101233297329533,
+            -8817.177214029176,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "robot"
+        },
+        {
+          "name": "body_25",
+          "label": "r2000ic_165f,210f_WELD_R2:242",
+          "url": "meshes/robot_link_242.glb",
+          "source_matrix": [
+            0.8688001514188667,
+            -0.1411200080598672,
+            -0.4746276858967853,
+            7176.098354995556,
+            0.4794255386041997,
+            -3.116144181048858e-15,
+            0.8775825618903746,
+            587.9932236143658,
+            -0.12384445820717006,
+            -0.9899924966004455,
+            0.06765653587192813,
+            -8750.62190233381,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "robot"
+        },
+        {
+          "name": "body_26",
+          "label": "r2000ic_165f,210f_WELD_R2:243",
+          "url": "meshes/robot_link_243.glb",
+          "source_matrix": [
+            0.8688001514188667,
+            -0.1411200080598672,
+            -0.4746276858967853,
+            7176.098354995556,
+            0.4794255386041997,
+            -3.116144181048858e-15,
+            0.8775825618903746,
+            587.9932236143658,
+            -0.12384445820717006,
+            -0.9899924966004455,
+            0.06765653587192813,
+            -8750.62190233381,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "robot"
+        },
+        {
+          "name": "body_27",
+          "label": "r2000ic_165f,210f_WELD_R2:244",
+          "url": "meshes/robot_link_244.glb",
+          "source_matrix": [
+            0.8688001514188667,
+            -0.1411200080598672,
+            -0.4746276858967853,
+            7176.098354995556,
+            0.4794255386041997,
+            -3.116144181048858e-15,
+            0.8775825618903746,
+            587.9932236143658,
+            -0.12384445820717006,
+            -0.9899924966004455,
+            0.06765653587192813,
+            -8750.62190233381,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "robot"
+        },
+        {
+          "name": "body_28",
+          "label": "r2000ic_165f,210f_WELD_R2:245",
+          "url": "meshes/robot_link_245.glb",
+          "source_matrix": [
+            0.8688001514188667,
+            -0.47462768589678533,
+            0.1411200080598671,
+            5963.075397900951,
+            0.4794255386041997,
+            0.8775825618903746,
+            3.311006654292903e-15,
+            2316.830870538397,
+            -0.12384445820717006,
+            0.06765653587192791,
+            0.9899924966004455,
+            -10567.62374496899,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "robot"
+        },
+        {
+          "name": "body_29",
+          "label": "r2000ic_165f,210f_WELD_R2:246",
+          "url": "meshes/robot_link_246.glb",
+          "source_matrix": [
+            0.9425225705448018,
+            -0.14112000805986724,
+            0.30288008739235794,
+            6957.396144778429,
+            -0.3059418010059917,
+            -3.1161441810488582e-15,
+            0.9520502163211826,
+            762.8052314807672,
+            -0.13435333420064266,
+            -0.9899924966004456,
+            -0.04317450942381878,
+            -8719.446658304656,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "robot"
+        },
+        {
+          "name": "body_30",
+          "label": "r2000ic_165f,210f_WELD_R2:247",
+          "url": "meshes/robot_link_247.glb",
+          "source_matrix": [
+            0.9425225705448018,
+            -0.14112000805986724,
+            0.30288008739235794,
+            6868.130635104725,
+            -0.3059418010059917,
+            -3.1161441810488582e-15,
+            0.9520502163211826,
+            786.3689330699948,
+            -0.13435333420064266,
+            -0.9899924966004456,
+            -0.04317450942381878,
+            -8706.722168484906,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "robot"
+        },
+        {
+          "name": "body_31",
+          "label": "LZ-L-OP10-SUB1*",
+          "url": "meshes/LZ-L-OP10-SUB1.glb",
+          "source_matrix": [
+            1.050747519780533e-06,
+            1.001164066874473e-05,
+            0.999999999949332,
+            5793.5031543985515,
+            -0.8660259037885587,
+            0.4999991339496849,
+            -4.095837093561426e-06,
+            3988.6079996412245,
+            -0.4999991339653568,
+            -0.8660259037403748,
+            9.195713008439934e-06,
+            -9217.157350190984,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "product"
+        },
+        {
+          "name": "body_32",
+          "label": "LZ-L-OP10-SUB2*",
+          "url": "meshes/LZ-L-OP10-SUB2.glb",
+          "source_matrix": [
+            -0.44848393525920366,
+            -1.7283349128369085e-05,
+            -0.8937908924998642,
+            8770.206516204307,
+            0.7740422207564905,
+            0.4999990741844128,
+            -0.38840644472136404,
+            -285.11744854040626,
+            0.4469013317285801,
+            -0.8660259381311944,
+            -0.2242281743742426,
+            -11732.552025161734,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "product"
+        },
+        {
+          "name": "body_33",
+          "label": "LZ-L-OP10-SUB3*",
+          "url": "meshes/LZ-L-OP10-SUB3.glb",
+          "source_matrix": [
+            -3.9715772531267093e-07,
+            6.477012000644283e-06,
+            -0.9999999999789453,
+            6235.505861518862,
+            0.8660259037880909,
+            0.49999913395889173,
+            2.8945515130523106e-06,
+            -776.234539335057,
+            0.4999991339671125,
+            -0.8660259037687074,
+            -5.807838690341919e-06,
+            -11940.207204657716,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "product"
+        },
+        {
+          "name": "body_34",
+          "label": "ST1-LZ-OP10L:DONG",
+          "url": "welding_positioner_static_v2/DONG.glb",
+          "source_matrix": [
+            -0.9999999999835106,
+            -1.924448924234817e-06,
+            5.410677475418842e-06,
+            25587.04247903943,
+            3.7235528896195143e-06,
+            0.5000013457329862,
+            0.8660246268157379,
+            6546.563130633784,
+            -4.371966180472981e-06,
+            0.8660246268216045,
+            -0.5000013457175757,
+            -14639.067879754602,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "fixture"
+        },
+        {
+          "name": "body_35",
+          "label": "ST1-LZ-OP10L:JING",
+          "url": "welding_positioner_static_v2/JING.glb",
+          "source_matrix": [
+            -0.9999999999999999,
+            3.231089148861272e-15,
+            -5.020792282118461e-21,
+            25587.0025612338,
+            3.231089148865173e-15,
+            0.9999999999987926,
+            -1.5539008831996694e-06,
+            -0.0291092121715337,
+            -3.76158192263132e-37,
+            -1.5539008831996694e-06,
+            -0.9999999999987926,
+            -17471.9957789877,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "fixture"
+        },
+        {
+          "name": "body_36",
+          "label": "waiwei",
+          "url": "welding_full_factory_v109/factory.glb",
+          "source_matrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "kind": "layout"
+        }
+      ],
+      "materials": [
+        {
+          "source_rgba": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "mujoco_name": "mat_0",
+          "effective_rgba": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "source_rgba": [
+            0,
+            0,
+            255,
+            255
+          ],
+          "mujoco_name": "mat_1",
+          "effective_rgba": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "source_rgba": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "mujoco_name": "mat_2",
+          "effective_rgba": [
+            0.0,
+            1.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "source_rgba": [
+            0,
+            255,
+            255,
+            255
+          ],
+          "mujoco_name": "mat_3",
+          "effective_rgba": [
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "source_rgba": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "mujoco_name": "mat_4",
+          "effective_rgba": [
+            1.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "source_rgba": [
+            255,
+            0,
+            255,
+            255
+          ],
+          "mujoco_name": "mat_5",
+          "effective_rgba": [
+            1.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "source_rgba": [
+            255,
+            255,
+            0,
+            255
+          ],
+          "mujoco_name": "mat_6",
+          "effective_rgba": [
+            1.0,
+            1.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "source_rgba": [
+            255,
+            255,
+            255,
+            0
+          ],
+          "mujoco_name": "mat_7",
+          "effective_rgba": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "source_rgba": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "mujoco_name": "mat_8",
+          "effective_rgba": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "compiled_meshes": 64,
+      "geoms": 81,
+      "moving_bodies": 34,
+      "unique_source_triangles": 11574317,
+      "compiled_unique_triangles": 11574317,
+      "instance_triangles": 11599049,
+      "include_layout": true,
+      "build_seconds": 49.3829991100356,
+      "placement_corrected": true,
+      "old_collision_results_valid_for_this_scene": false,
+      "camera_center": [
+        6.461779926209841,
+        9.374460438429365,
+        2.329803592518599
+      ],
+      "camera_extent": 6.235794893197588,
+      "collision_simulation": false,
+      "material_limit": "source GLBs have vertex colors only; no original JT PBR/texture data; MuJoCo lighting differs"
+    },
+    "final_play_time_s": 46.85701218608301
+  },
+  "tests": {
+    "passed": 148,
+    "skipped": 21
+  },
+  "historical_34983_recomputed": false,
+  "scope": "Successful staged raw-input cold300 feasibility pipeline; not the historical all-candidate optimized result. Failed earlier attempts remain failed."
+}
